@@ -2,7 +2,7 @@ import subprocess
 
 
 def run_k6_test():
-    result = subprocess.run(["k6", "run", "D:\Work\cyberok_task_3\k6.js"], capture_output=True, text=True)
+    result = subprocess.run(["k6", "run", "k6.js"], capture_output=True, text=True)
 
     if result.returncode != 0:
         print("Ошибка при выполнении k6 теста:")
